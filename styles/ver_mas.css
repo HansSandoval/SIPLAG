@@ -1,0 +1,189 @@
+/* Reset de márgenes, relleno y caja de modelo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fondo general */
+body {
+    background-color: #f7f8fc; /* Color de fondo suave */
+    padding-top: 0.5px; /* Deja espacio para el header */
+}
+
+/* Header */
+.header {
+    background: white;
+    padding: 0rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fija el header al principio */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-nuevo-proyecto {
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-link {
+    background-color: #f3f0ff;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    color: #6c5ce7;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.user-avatar {
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    background-color: #f3f0ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c5ce7;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1000px;
+    margin: 2rem auto; /* Asegura que el contenido esté centrado */
+    padding: 0 1.5rem;
+    padding-top: 5rem; /* Agrega espacio en la parte superior para que no toque el header */
+}
+
+/* Card (contenedor de proyecto) */
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    margin-top: 2rem;
+}
+
+/* Títulos */
+.proyecto-titulo {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #2d3436;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.visitas-header {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #2d3436;
+    font-weight: 600;
+}
+
+/* Estilos para inputs y etiquetas */
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.input-field {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-field:focus {
+    border-color: #6c5ce7;
+    outline: none;
+}
+
+/* Estilo para visitas */
+.visitas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.visita-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.estado-checkbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    background-color: #f3f0ff;
+}
+
+.ficha-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ficha-icon {
+    width: 24px;
+    height: 24px;
+    fill: #6c5ce7;
+}
+
+/* Botón para crear visita */
+.btn-crear-visita {
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 2rem;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-crear-visita:hover {
+    background-color: #5a4d7e;
+}
+
+/* Estilo cuando no hay visitas */
+.no-visitas {
+    text-align: center;
+    color: #666;
+    margin: 2rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+}

@@ -1,0 +1,96 @@
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.titulo-comuna {
+    font-size: 32px;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 600;
+    padding: 30px 0;
+    letter-spacing: -0.5px;
+    position: relative;
+}
+
+.titulo-comuna::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #6366f1, #8b5cf6);
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.comunas {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.comuna {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 0;
+    width: auto;
+    transition: all 0.2s ease;
+}
+
+.comuna:hover {
+    background-color: #f8fafc;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-color: #d1d5db;
+}
+
+.comuna a {
+    text-decoration: none;
+    color: #374151;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    font-weight: 500;
+}
+
+/* Header name fix */
+.user-name {
+    max-width: none;
+    white-space: nowrap;
+    overflow: visible;
+    margin-right: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contenedor {
+        width: 95%;
+        padding: 10px;
+    }
+    
+    .comunas {
+        padding: 15px;
+    }
+
+    .titulo-comuna {
+        font-size: 28px;
+        padding: 15px 0;
+    }
+}

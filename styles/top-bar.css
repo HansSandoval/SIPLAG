@@ -1,0 +1,96 @@
+/* Barra superior */
+.top-bar {
+    background-color: #f8f7fc; /* Fondo pastel claro */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center; /* Centrar elementos verticalmente */
+    border-bottom: 1px solid #e0e0e0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor izquierdo para el botón "Nuevo proyecto" */
+.left-container {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+/* Botón destacado: Nuevo proyecto */
+.btn-new-project {
+    background-color: #6c5ce7; /* Fondo morado oscuro */
+    color: #ffffff; /* Texto blanco */
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px; /* Ajuste interno */
+    font-size: 15px; /* Tamaño de texto */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 25px; /* Espaciado con los botones centrales */
+}
+
+/* Botones secundarios */
+.btn {
+    background-color: #dcd4f7; /* Fondo morado pastel */
+    color: #6c5ce7; /* Texto morado oscuro */
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px; /* Ajuste interno */
+    font-size: 15px; /* Texto ligeramente más grande */
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap; /* Evitar que el texto se divida */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 150px; /* Ancho mínimo consistente */
+    max-width: 180px; /* Ancho máximo */
+    text-align: center; /* Centra el texto dentro del botón */
+}
+
+.btn:hover {
+    background-color: #cbbff2; /* Color más claro al pasar el mouse */
+}
+
+/* Contenedor central */
+.center-container {
+    display: flex;
+    justify-content: center; /* Centrar los botones */
+    flex-grow: 1; /* Ocupa el espacio disponible */
+    gap: 25px; /* Más espacio entre botones */
+}
+
+/* Contenedor derecho para el perfil de usuario */
+.right-container {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 15px; /* Espaciado entre el icono y el nombre */
+}
+
+/* Ícono circular del usuario */
+.user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Forma circular */
+    background-color: #dcd4f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #6c5ce7;
+}
+
+.user-name {
+    color: #6c5ce7;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.user-name:hover {
+    text-decoration: underline;
+}

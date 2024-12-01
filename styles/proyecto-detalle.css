@@ -1,0 +1,140 @@
+/* Archivo: /SistemaPlanificadorAgronomo/styles/proyecto-detalle.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f7fd;
+}
+
+.header {
+    background: white;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn-nuevo-proyecto {
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-link {
+    background-color: #f3f0ff;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    color: #6c5ce7;
+    text-decoration: none;
+}
+
+.user-avatar {
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    background-color: #f3f0ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c5ce7;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.proyecto-titulo {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.input-group {
+    margin-bottom: 2rem;
+}
+
+.input-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.input-field {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.visitas-grid {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.visitas-header {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.estado-checkbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+}
+
+.ficha-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.btn-crear-visita {
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.no-visitas {
+    text-align: center;
+    color: #666;
+    margin: 2rem 0;
+}
